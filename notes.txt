@@ -1,0 +1,93 @@
+
+Slide 1 gnomes. Just the intro, don't say much.
+
+-------------------------------
+
+Slide 2
+
+A lot of talk about performance per watt, low power computing, ARM, MIPS servers
+A lot of crap talked about how you will just get more servers and it will be "as fast"
+
+We know that scale out is not trivial.
+Will they replace what we have?
+What will they look like?
+Will they perform?
+What kinds of problem will they be good for?
+
+
+-- replace with question
+
+What would overcome the inertia of the status quo?
+
+
+
+
+--- slide 3
+
+Well that's not going to sell. We all know that 100 tiny boxes are not going to deliver the same performance as one big one (Amdahl's Law), and there is really nothing in it power, memory, performance or cost wise.
+
+Of course there is utilisation. But virtualization has solved that issue.
+
+
+
+former slide 4 TOO MUCH TEXT   can we kill this one? Basically saying if GbE limited, get 10GbE KILLED
+
+Bandwidth limited applications
+
+Dual core 1GHz ARM can run SHA1 at gigabit ethernet line speed. Cloud providers currently mostly running gigabit to the server at the moment.
+
+So for storage type applications (eg S3) it might make sense, if it is cheaper than moving to 10GbE.
+
+Bit on the tail end of network cycle, as 10GbE will be shipping in volume and much cheaper when low power servers do.
+
+BUT still the case that for bandwidth limited processes, 1GbE to 10GbE is only a factor of 10 not 100. 10 x low power ARM might be competitive.
+
+Best case 1 order of magnitude cheaper for same bandwidth
+
+
+
+Slide 4. Cut back text. Needs more.
+
+
+
+
+Slides 5, 6    ok, very plain though...
+
+
+
+
+
+Slide 8.  This is the key slide!!!!
+
+For workloads that do not involve reading huge amounts of data, or seeking a huge number of times per request, we can serve 1k-10k request per second from SSD rather than out of RAM. Gigabit ethernet with 8k responses is bandwidth limited to 12,000 responses a second.
+Eg SAAS web application, each customer has 1GB data that must be available fast for querying.
+
+Best case 2 orders of magnitude cheaper...
+
+
+
+Slide 9  hmmm, cut one
+
+
+
+Slide 10. cleaned up
+
+1. Doing the same thing with small low power boxes is less efficient - think different
+
+2. Low power computing will not replace what we have now
+3. It does not suit all applications, but enough for a market
+4. We cannot use the current breed of applications for RAM heavy software
+
+5. SSD replaces RAM - slower, but fast enough
+6. Aim for 1k request per second applications, eg multitenant web applications
+
+7. Software needs low memory footprint as there isn't much
+8. Software needs to be efficient, as every cycle counts
+
+9. 1-2 orders of magnitude cheaper is a business opportunity
+
+
+9 make more cloudy
+
+
+
